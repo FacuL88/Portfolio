@@ -4,17 +4,41 @@
 }
 
 body {
-    background: url(/imagenes/istockphoto-1185554321-2048x2048.jpg);
-    background-size: cover;
+    background-color: rgb(98, 111, 114);
 }
 
 .container {
     display: flex;
     flex-flow: column wrap;
-    background: rgb(109, 100, 100);
-    margin: auto;
+    justify-content: center;
+    padding: 0;
+    width: 100%;
 
-    .header-nav {
-
+    .flex-items {
+        color: rgb(241, 6, 6);
     }
 }
+
+
+.main {
+    padding: 80px;
+
+    .contenido-main {
+        display: flex;
+        justify-content: space-around;
+
+        .contenido-items {
+            padding: 20px;
+            margin: 10px;
+        }
+
+        img {
+            align-self: center;
+            width: 250px;
+            height: 300px;
+        }
+    }
+}
+
+
+
