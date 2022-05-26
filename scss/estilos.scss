@@ -5,6 +5,9 @@
 
 body {
     background-color: #626f72;
+    width: 100%;
+    padding: 0;
+    margin: 0;
 }
 
 .container {
@@ -12,7 +15,6 @@ body {
     flex-flow: column wrap;
     justify-content: space-around;
     padding: 0;
-    width: 100%;
     text-align: center;
 
     .flex-items {

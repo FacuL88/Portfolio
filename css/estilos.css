@@ -3,14 +3,16 @@
   font-family: Arial, Helvetica, sans-serif; }
 
 body {
-  background-color: #626f72; }
+  background-color: #626f72;
+  width: 100%;
+  padding: 0;
+  margin: 0; }
 
 .container {
   display: flex;
   flex-flow: column wrap;
   justify-content: space-around;
   padding: 0;
-  width: 100%;
   text-align: center; }
   .container .flex-items {
     align-items: center;
