@@ -10,35 +10,37 @@ body {
 .container {
     display: flex;
     flex-flow: column wrap;
-    justify-content: center;
+    justify-content: space-around;
     padding: 0;
     width: 100%;
+    text-align: center;
 
     .flex-items {
-        color: rgb(241, 6, 6);
+        align-items: center;
+        color: rgb(58, 180, 140);
     }
-}
-
-
-.main {
-    padding: 80px;
-
-    .contenido-main {
-        display: flex;
-        justify-content: space-around;
-
+    
+    .main {
+        padding: 80px;
+        flex-wrap: nowrap;
+    
         .contenido-items {
-            padding: 20px;
-            margin: 10px;
-        }
-
-        img {
-            align-self: center;
-            width: 250px;
-            height: 300px;
+            img {
+                padding: 30px;
+                width: 250px;
+                height: 300px;
+            }
+    
         }
     }
+
+    .footer {
+        height: 200px;
+        background: #284c5e;
+    }
 }
+
+
 
 
 

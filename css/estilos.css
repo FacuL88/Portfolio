@@ -8,21 +8,20 @@ body {
 .container {
   display: flex;
   flex-flow: column wrap;
-  justify-content: center;
+  justify-content: space-around;
   padding: 0;
-  width: 100%; }
+  width: 100%;
+  text-align: center; }
   .container .flex-items {
-    color: #f10606; }
-
-.main {
-  padding: 80px; }
-  .main .contenido-main {
-    display: flex;
-    justify-content: space-around; }
-    .main .contenido-main .contenido-items {
-      padding: 20px;
-      margin: 10px; }
-    .main .contenido-main img {
-      align-self: center;
+    align-items: center;
+    color: #3ab48c; }
+  .container .main {
+    padding: 80px;
+    flex-wrap: nowrap; }
+    .container .main .contenido-items img {
+      padding: 30px;
       width: 250px;
       height: 300px; }
+  .container .footer {
+    height: 200px;
+    background: #284c5e; }
