@@ -1,0 +1,5 @@
+.container {
+  display: flex;
+  background: black; }
+  .container .col-main {
+    background-color: red; }
