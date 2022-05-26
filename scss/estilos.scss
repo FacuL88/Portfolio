@@ -4,7 +4,7 @@
 }
 
 body {
-    background-color: rgb(98, 111, 114);
+    background-color: #626f72;
 }
 
 .container {
@@ -18,6 +18,17 @@ body {
     .flex-items {
         align-items: center;
         color: rgb(58, 180, 140);
+    }
+
+    .header {
+
+        .navbar-brand {
+            img {
+                width: 30px;
+                border-radius: 100%;
+                background-color: #626f72;
+            }
+        }
     }
     
     .main {
