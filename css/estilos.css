@@ -22,6 +22,7 @@ body {
     display: flex;
     margin: 50px; }
     .container .contenido-main p {
+      text-align: center;
       padding: 20px;
       margin: auto;
       color: #e4e8ee; }
@@ -74,17 +75,46 @@ body {
   .flex-proyectos .item-header img {
     width: 30px;
     border-radius: 100%; }
-  .flex-proyectos .item-articulo .grid-container {
+  .flex-proyectos .grid-articulo {
     display: grid;
     grid-template-columns: repeat(2, 300px);
     grid-template-rows: repeat(2, 300px);
-    border: 1px solid black;
-    margin: 40px; }
-    .flex-proyectos .item-articulo .grid-container img {
-      width: 400px; }
-  .flex-proyectos .item-footer {
-    background-color: #000000;
-    border-top: 2px solid #6d6863; }
+    justify-content: center;
+    align-content: center;
+    justify-items: center;
+    align-items: center;
+    border: 2px solid black;
+    grid-gap: 20px;
+    padding: 0; }
+    .flex-proyectos .grid-articulo .grid-items img {
+      width: 200px;
+      height: 200px; }
+    .flex-proyectos .grid-articulo div {
+      border: 5px solid black; }
+
+.item-footer {
+  text-align: center;
+  padding: 10px;
+  border-top: 2px solid #6d6863;
+  background-color: #000000; }
+  .item-footer h6 {
+    padding: 10px;
+    color: #e4e8ee; }
+  .item-footer ul {
+    text-align: center;
+    list-style-type: none; }
+  .item-footer li {
+    font-size: small;
+    padding: 5px;
+    margin: 0px 5px; }
+  .item-footer img {
+    width: 30px; }
+
+@media screen and (min-width: 576px) {
+  .item-footer {
+    /*    height: 200px;*/ }
+    .item-footer ul {
+      display: inline-flex; } }
 
 /* SECCION 3: CONTACTO */
 .flex-contacto {
