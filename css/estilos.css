@@ -7,7 +7,7 @@
 body {
   background-color: #000000;
   background: radial-gradient(#817b7b, #000000);
-  color: #dacfbb; }
+  color: #6d6863; }
 
 /* SECCION 1: HOME */
 .container {
@@ -23,7 +23,8 @@ body {
     margin: 50px; }
     .container .contenido-main p {
       padding: 20px;
-      margin: auto; }
+      margin: auto;
+      color: #e4e8ee; }
     .container .contenido-main img {
       align-self: center;
       width: 200px;
@@ -31,12 +32,25 @@ body {
   .container .footer {
     text-align: center;
     padding: 10px;
-    border-top: 2px solid #dacfbb;
+    border-top: 2px solid #6d6863;
     background-color: #000000; }
+    .container .footer .contenido-footer img {
+      width: 20px;
+      border-radius: 100%; }
+    .container .footer .contenido-footer li {
+      font-size: small;
+      padding: 5px;
+      margin: 0px 5px; }
     .container .footer h6 {
-      padding: 10px; }
+      padding: 10px;
+      color: #e4e8ee; }
     .container .footer ul {
-      list-style-type: none; }
+      list-style-type: none;
+      text-align: center; }
+
+@media screen and (min-width: 576px) {
+  .contenido-footer ul {
+    display: inline-flex; } }
 
 @media screen and (min-width: 200px) and (max-width: 768px) {
   .contenido-main {
@@ -60,7 +74,30 @@ body {
   .flex-proyectos .item-header img {
     width: 30px;
     border-radius: 100%; }
-  .flex-proyectos .item-articulo {
-    height: 600px; }
+  .flex-proyectos .item-articulo .grid-container {
+    display: grid;
+    grid-template-columns: repeat(2, 300px);
+    grid-template-rows: repeat(2, 300px);
+    border: 1px solid black;
+    margin: 40px; }
+    .flex-proyectos .item-articulo .grid-container img {
+      width: 400px; }
   .flex-proyectos .item-footer {
-    border-top: 2px solid #dacfbb; }
+    background-color: #000000;
+    border-top: 2px solid #6d6863; }
+
+/* SECCION 3: CONTACTO */
+.flex-contacto {
+  display: flex;
+  flex-flow: column wrap; }
+  .flex-contacto .item-header-c img {
+    width: 30px;
+    border-radius: 100%; }
+  .flex-contacto .item-footer-c {
+    border-top: 2px solid #6d6863;
+    text-align: center;
+    padding: 10px; }
+    .flex-contacto .item-footer-c h6 {
+      padding: 10px; }
+    .flex-contacto .item-footer-c ul {
+      list-style-type: none; }

@@ -1,7 +1,8 @@
 /* VARIABLES */
 $colormenu: #0f7261;
-$colortexto: #dacfbb;
+$colortexto: #6d6863;
 $colorfondo: #000000;
+$colortexto-2: #e4e8ee;
 
 * {
     box-sizing: border-box;
@@ -14,6 +15,7 @@ body {
     background: radial-gradient(#817b7b, $colorfondo);
     color: $colortexto;
 }
+
 
 /* SECCION 1: HOME */
 
@@ -38,6 +40,7 @@ body {
         p {
             padding: 20px;
             margin: auto;
+            color: $colortexto-2;
         }
 
         img {
@@ -53,15 +56,40 @@ body {
         border-top: 2px solid $colortexto;
         background-color: $colorfondo;
 
+        .contenido-footer {
+            
+
+            img{
+                width: 20px;
+                border-radius: 100%;
+            }
+
+            li {
+                font-size: small;
+                padding: 5px;
+                margin: 0px 5px;
+            }
+        }
+
         h6 {
             padding: 10px;
+            color: #e4e8ee;
         }
 
         ul {
             list-style-type: none;
+            text-align: center;
         }
     }
 
+}
+
+@media screen and (min-width: 576px) {
+    .contenido-footer {
+        ul {
+            display: inline-flex;
+        }
+    }
 }
 
 
@@ -102,10 +130,53 @@ body {
     }
 
     .item-articulo {
-        height: 600px;
+
+        .grid-container {
+            display: grid;
+            grid-template-columns: repeat(2, 300px);
+            grid-template-rows: repeat(2, 300px);
+            border: 1px solid black;
+            margin: 40px;
+
+            img {
+                width: 400px;
+            }
+        }
+       
     }
 
     .item-footer {
+        background-color: $colorfondo;
         border-top: 2px solid $colortexto;
+    }
+}
+
+/* SECCION 3: CONTACTO */
+
+.flex-contacto {
+    display: flex;
+    flex-flow: column wrap;
+
+    .item-header-c {
+
+        img {
+            width: 30px;
+            border-radius: 100%;
+        }
+    }
+
+
+    .item-footer-c {
+        border-top: 2px solid $colortexto;
+        text-align: center;
+        padding: 10px;
+
+        h6 {
+            padding: 10px;
+        }
+
+        ul {
+            list-style-type: none;
+        }
     }
 }
