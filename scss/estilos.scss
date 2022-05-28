@@ -133,26 +133,32 @@ body {
     .grid-articulo {
 
         display: grid;
-        grid-template-columns: repeat(2, 300px);
-        grid-template-rows: repeat(2, 300px); 
+        grid-template-columns: repeat(1, 300px);
+        grid-template-rows: repeat(4, 300px); 
         justify-content: center;
         align-content: center; 
         justify-items: center;
         align-items: center;
-        border: 2px solid black;
         grid-gap: 20px;
         padding: 0;
+
+        @media screen and (min-width: 576px) {
+            display: grid;
+            grid-template-columns: repeat(2, 300px);
+            grid-template-rows: repeat(2, 300px);
+        }
 
         .grid-items {
             img {
                 width: 200px;
                 height: 200px;
             }
-        }
 
-            div {
-                border: 5px solid black;
+            li {
+                color: $colortexto-2;
+                list-style-type: none;
             }
+        }
 
         }
        
@@ -185,15 +191,12 @@ body {
         }
     }
 
-
-@media screen and (min-width: 576px) {
-    .item-footer {
-    /*    height: 200px;*/
-
-        ul {
-            display: inline-flex;
+    @media screen and (min-width: 576px) {
+        .item-footer {    
+            ul {
+                display: inline-flex;
+            }
         }
-    }
 }
 
 /* SECCION 3: CONTACTO */
