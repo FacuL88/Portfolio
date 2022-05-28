@@ -12,60 +12,51 @@ body {
 /* SECCION 1: HOME */
 .container {
   display: flex;
-  flex-direction: column;
-  padding: 0;
+  flex-flow: column wrap;
   max-width: max-content; }
   .container .navbar-brand img {
     width: 30px;
     border-radius: 100%; }
-  .container .contenido-main {
-    display: flex;
-    margin: 50px; }
-    .container .contenido-main p {
-      text-align: center;
-      padding: 20px;
-      margin: auto;
-      color: #e4e8ee; }
-    .container .contenido-main img {
-      align-self: center;
-      width: 200px;
-      height: 200px; }
+  .container .grid-main {
+    display: grid;
+    grid-template-columns: repeat(2, 300px);
+    justify-content: center;
+    align-content: center;
+    align-self: center;
+    padding: 80px; }
+    @media screen and (max-width: 576px) {
+      .container .grid-main {
+        grid-template-columns: 300px;
+        grid-template-rows: repeat(2, 300px); }
+        .container .grid-main .item-main2 img {
+          width: 200px; } }
+  .container .item-main p {
+    color: #000000; }
+  .container .item-main2 {
+    justify-self: center;
+    align-self: center; }
+    .container .item-main2 img {
+      width: 250px; }
   .container .footer {
     text-align: center;
     padding: 10px;
     border-top: 2px solid #6d6863;
     background-color: #000000; }
-    .container .footer .contenido-footer img {
-      width: 20px;
-      border-radius: 100%; }
-    .container .footer .contenido-footer li {
-      font-size: small;
-      padding: 5px;
-      margin: 0px 5px; }
     .container .footer h6 {
       padding: 10px;
       color: #e4e8ee; }
     .container .footer ul {
-      list-style-type: none;
-      text-align: center; }
-
-@media screen and (min-width: 576px) {
-  .contenido-footer ul {
-    display: inline-flex; } }
-
-@media screen and (min-width: 200px) and (max-width: 768px) {
-  .contenido-main {
-    flex-direction: column;
-    flex-wrap: wrap;
-    text-align: center;
-    margin: 0;
-    padding: 0; }
-    .contenido-main img {
-      align-self: center; } }
-
-@media screen and (min-width: 767px) and (max-width: 2560px) {
-  .main {
-    margin: 100px; } }
+      text-align: center;
+      list-style-type: none; }
+    .container .footer li {
+      font-size: small;
+      padding: 5px;
+      margin: 0px 5px; }
+    .container .footer img {
+      width: 20px; }
+  @media screen and (min-width: 576px) {
+    .container .footer ul {
+      display: inline-flex; } }
 
 /* SECCION 2: PROYECTOS */
 .flex-proyectos {
