@@ -13,6 +13,8 @@ body {
 .container {
   display: flex;
   flex-flow: column wrap;
+  justify-content: center;
+  align-content: center;
   max-width: max-content; }
   .container .navbar-brand img {
     width: 30px;
@@ -22,12 +24,15 @@ body {
     grid-template-columns: repeat(2, 300px);
     justify-content: center;
     align-content: center;
-    align-self: center;
-    padding: 80px; }
+    padding: 80px;
+    height: 100vh;
+    max-width: max-content;
+    margin: auto; }
     @media screen and (max-width: 576px) {
       .container .grid-main {
         grid-template-columns: 300px;
-        grid-template-rows: repeat(2, 300px); }
+        grid-template-rows: repeat(2, 300px);
+        margin: 0; }
         .container .grid-main .item-main2 img {
           width: 200px; } }
   .container .item-main p {
@@ -75,7 +80,8 @@ body {
     justify-items: center;
     align-items: center;
     grid-gap: 20px;
-    padding: 0; }
+    padding: 0;
+    margin: 50px 0px; }
     @media screen and (min-width: 576px) {
       .flex-proyectos .grid-articulo {
         display: grid;
@@ -104,7 +110,7 @@ body {
     padding: 5px;
     margin: 0px 5px; }
   .item-footer img {
-    width: 30px; }
+    width: 20px; }
 
 @media screen and (min-width: 576px) {
   .item-footer ul {
