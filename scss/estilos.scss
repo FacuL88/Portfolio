@@ -3,6 +3,7 @@ $colormenu: #0f7261;
 $colortexto: #6d6863;
 $colorfondo: #000000;
 $colortexto-2: #e4e8ee;
+$piedepagina: footer;
 
 
 * {
@@ -204,18 +205,32 @@ body {
         }
     }
 
-
-    .item-footer-c {
-        border-top: 2px solid $colortexto;
-        text-align: center;
-        padding: 10px;
-
-        h6 {
+    @each $footer in $piedepagina  {
+            .footer-#{$footer} {
+            text-align: center;
             padding: 10px;
-        }
-
-        ul {
-            list-style-type: none;
+            border-top: 2px solid $colortexto;
+            background-color: $colorfondo;
+    
+            h6 {
+                padding: 10px;
+                color: $colortexto-2
+            }
+    
+            ul {
+                text-align: center;
+                list-style-type: none;
+            }
+    
+            li {
+                font-size: small;
+                padding: 5px;
+                margin: 0px 5px;
+            }
+    
+            img {
+                width: 20px;
+            }
         }
     }
 }

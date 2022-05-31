@@ -123,11 +123,20 @@ body {
   .flex-contacto .item-header-c img {
     width: 30px;
     border-radius: 100%; }
-  .flex-contacto .item-footer-c {
-    border-top: 2px solid #6d6863;
+  .flex-contacto .footer-footer {
     text-align: center;
-    padding: 10px; }
-    .flex-contacto .item-footer-c h6 {
-      padding: 10px; }
-    .flex-contacto .item-footer-c ul {
+    padding: 10px;
+    border-top: 2px solid #6d6863;
+    background-color: #000000; }
+    .flex-contacto .footer-footer h6 {
+      padding: 10px;
+      color: #e4e8ee; }
+    .flex-contacto .footer-footer ul {
+      text-align: center;
       list-style-type: none; }
+    .flex-contacto .footer-footer li {
+      font-size: small;
+      padding: 5px;
+      margin: 0px 5px; }
+    .flex-contacto .footer-footer img {
+      width: 20px; }
