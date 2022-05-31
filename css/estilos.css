@@ -117,26 +117,7 @@ body {
     display: inline-flex; } }
 
 /* SECCION 3: CONTACTO */
-.flex-contacto {
-  display: flex;
-  flex-flow: column wrap; }
-  .flex-contacto .item-header-c img {
-    width: 30px;
-    border-radius: 100%; }
-  .flex-contacto .footer-footer {
-    text-align: center;
-    padding: 10px;
-    border-top: 2px solid #6d6863;
-    background-color: #000000; }
-    .flex-contacto .footer-footer h6 {
-      padding: 10px;
-      color: #e4e8ee; }
-    .flex-contacto .footer-footer ul {
-      text-align: center;
-      list-style-type: none; }
-    .flex-contacto .footer-footer li {
-      font-size: small;
-      padding: 5px;
-      margin: 0px 5px; }
-    .flex-contacto .footer-footer img {
-      width: 20px; }
+.grid-contacto {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 60px 1fr 150px; }

@@ -193,44 +193,8 @@ body {
 
 /* SECCION 3: CONTACTO */
 
-.flex-contacto {
-    display: flex;
-    flex-flow: column wrap;
-
-    .item-header-c {
-
-        img {
-            width: 30px;
-            border-radius: 100%;
-        }
-    }
-
-    @each $footer in $piedepagina  {
-            .footer-#{$footer} {
-            text-align: center;
-            padding: 10px;
-            border-top: 2px solid $colortexto;
-            background-color: $colorfondo;
-    
-            h6 {
-                padding: 10px;
-                color: $colortexto-2
-            }
-    
-            ul {
-                text-align: center;
-                list-style-type: none;
-            }
-    
-            li {
-                font-size: small;
-                padding: 5px;
-                margin: 0px 5px;
-            }
-    
-            img {
-                width: 20px;
-            }
-        }
-    }
+.grid-contacto {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 60px 1fr 150px;
 }
