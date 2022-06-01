@@ -193,7 +193,7 @@ body {
 
 /* SECCION 3: CONTACTO */
 
-.grid-contacto {
+.flex-contacto {
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
@@ -205,12 +205,27 @@ body {
         }
     }
 
-    .item-articulo-c {
-        display: grid;
-    }
+   /* .item-articulo-c {
+
+   }*/
+
+   .grid-contacto {
+       display: grid;
+       grid-template-columns: 1fr;
+       grid-template-rows: 1fr 1fr;
+       justify-content: center;
+       align-content: center;
+       align-items: center;
+       justify-items: center;
+       background: radial-gradient(#4e4848, #000000);
+   }
+
+   .grid-articulo {
+       margin: 20px;
+       padding: 10px;
+   }
 
     .texto-form {
-        justify-self: center;
 
         li {
             list-style-type: none;
@@ -218,19 +233,68 @@ body {
     }
 
     .form {
+        text-align: center;
+        max-width: 576px;
 
         textarea {
-            width: 200px;
+            width: 75%;
             margin: 6px;
+            padding: 5px;
+            outline: none;
         }
 
         input {
-            width: 200px;
+            width: 75%;
             margin: 6px;
+            padding: 5px;
+            outline: none;
         }
     }
 
     .item-footer-c {
-        border-top: 2px solid black;
+        
+            text-align: center;
+            padding: 10px;
+            border-top: 2px solid $colortexto;
+            background-color: $colorfondo;
+    
+            h6 {
+                padding: 10px;
+                color: $colortexto-2
+            }
+    
+            ul {
+                text-align: center;
+                list-style-type: none;
+            }
+    
+            li {
+                font-size: small;
+                padding: 5px;
+                margin: 0px 5px;
+            }
+    
+            img {
+                width: 20px;
+            }
+        }
+    
+        @media screen and (min-width: 576px) {
+
+            .grid-contacto {
+                display: grid;
+                grid-template-columns: 1fr 1fr;
+                grid-template-rows: 1fr;
+                border: 2px solid rgb(255, 255, 255);
+                max-width: 768px;
+                margin: auto;
+            }
+
+            .item-footer-c {    
+                ul {
+                    display: inline-flex;
+                }
+            }
     }
 }
+
