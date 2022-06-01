@@ -194,7 +194,43 @@ body {
 /* SECCION 3: CONTACTO */
 
 .grid-contacto {
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: 60px 1fr 150px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+
+    .navbar-brand {
+        img {
+            width: 30px;
+            border-radius: 100%;
+        }
+    }
+
+    .item-articulo-c {
+        display: grid;
+    }
+
+    .texto-form {
+        justify-self: center;
+
+        li {
+            list-style-type: none;
+        }
+    }
+
+    .form {
+
+        textarea {
+            width: 200px;
+            margin: 6px;
+        }
+
+        input {
+            width: 200px;
+            margin: 6px;
+        }
+    }
+
+    .item-footer-c {
+        border-top: 2px solid black;
+    }
 }
