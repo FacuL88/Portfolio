@@ -12,10 +12,7 @@ body {
 /* SECCION 1: HOME */
 .container {
   display: flex;
-  flex-flow: column wrap;
-  justify-content: center;
-  align-content: center;
-  max-width: max-content; }
+  flex-flow: column wrap; }
   .container .navbar-brand img {
     width: 30px;
     border-radius: 100%; }
@@ -139,21 +136,56 @@ body {
   .flex-contacto .grid-articulo {
     margin: 20px;
     padding: 10px; }
-  .flex-contacto .texto-form li {
-    list-style-type: none; }
+  .flex-contacto .texto-form {
+    color: #9e9b9b; }
+    .flex-contacto .texto-form .whatsapp {
+      width: 25px; }
+    .flex-contacto .texto-form img {
+      width: 30px;
+      border-radius: 100%; }
+    .flex-contacto .texto-form li {
+      list-style-type: none; }
   .flex-contacto .form {
     text-align: center;
     max-width: 576px; }
+    .flex-contacto .form .submit {
+      color: white;
+      margin: 20px;
+      width: 150px;
+      height: 30px;
+      background-color: #317e60;
+      transition-property: background-color;
+      transition-duration: 0.5s; }
+    .flex-contacto .form .submit:hover {
+      background-color: #163b35; }
     .flex-contacto .form textarea {
+      color: #6d6863;
       width: 75%;
+      min-height: 140px;
       margin: 6px;
       padding: 5px;
-      outline: none; }
+      outline: none;
+      background: none;
+      border: none;
+      border-bottom: 2px solid #317e60;
+      resize: none;
+      transition-property: background-color;
+      transition-duration: 0.5s; }
+    .flex-contacto .form textarea:hover {
+      background-color: #163b35; }
     .flex-contacto .form input {
+      color: #6d6863;
       width: 75%;
       margin: 6px;
       padding: 5px;
-      outline: none; }
+      outline: none;
+      background: none;
+      border: none;
+      border-bottom: 2px solid #317e60;
+      transition-property: background-color;
+      transition-duration: 0.5s; }
+    .flex-contacto .form input:hover {
+      background-color: #163b35; }
   .flex-contacto .item-footer-c {
     text-align: center;
     padding: 10px;
@@ -176,8 +208,12 @@ body {
       display: grid;
       grid-template-columns: 1fr 1fr;
       grid-template-rows: 1fr;
-      border: 2px solid white;
+      border: 2px solid #317e60;
       max-width: 768px;
-      margin: auto; }
+      margin: 100px auto; }
+    .flex-contacto .form textarea {
+      width: 100%; }
+    .flex-contacto .form input {
+      width: 100%; }
     .flex-contacto .item-footer-c ul {
       display: inline-flex; } }
