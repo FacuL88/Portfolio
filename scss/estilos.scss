@@ -38,16 +38,15 @@ body {
 .grid-main {
     display: grid;
     justify-items: center;
-
 }
 
 .grid-item {
 
     margin: 20px;
-    padding: 10px;
 
     p {
         color: #adafb4;
+        padding-left: 150px;
     }
 
     img {
