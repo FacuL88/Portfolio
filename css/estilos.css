@@ -20,13 +20,13 @@ body {
 
 .grid-main {
   display: grid;
-  justify-items: center; }
+  justify-items: center;
+  margin: 40px; }
 
 .grid-item {
   margin: 20px; }
   .grid-item p {
-    color: #adafb4;
-    padding-left: 150px; }
+    color: #adafb4; }
   .grid-item img {
     width: 200px;
     height: 200px; }
@@ -56,6 +56,8 @@ body {
     grid-template-rows: 1fr;
     align-items: center;
     height: 100vh; }
+  .grid-item p {
+    padding-left: 150px; }
   .footer ul {
     display: inline-flex; } }
 

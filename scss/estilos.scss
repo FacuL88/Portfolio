@@ -38,15 +38,14 @@ body {
 .grid-main {
     display: grid;
     justify-items: center;
+    margin: 40px;
 }
 
 .grid-item {
-
     margin: 20px;
 
     p {
         color: #adafb4;
-        padding-left: 150px;
     }
 
     img {
@@ -90,6 +89,12 @@ body {
         grid-template-rows: 1fr;
         align-items: center;
         height: 100vh;
+    }
+
+    .grid-item {
+        p {
+            padding-left: 150px;
+        }
     }
 
     .footer {    
